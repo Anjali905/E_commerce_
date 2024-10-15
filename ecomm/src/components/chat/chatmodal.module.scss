@@ -1,0 +1,67 @@
+.chatModal {
+    width: 400px; /* Adjust the width of the chat modal */
+    max-height: 600px; /* Maximum height */
+    border-radius: 10px; /* Rounded corners */
+    background-color: #ffffff; /* Background color */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Shadow for a 3D effect */
+    overflow: hidden; /* Hide overflow */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+  }
+  
+  .chatHeader {
+    padding: 16px;
+    background-color: #6a5acd; /* Header background color */
+    color: #ffffff; /* Header text color */
+    text-align: center; /* Centered text */
+  }
+  
+  .chatBody {
+    flex-grow: 1; /* Take up remaining space */
+    padding: 10px;
+    overflow-y: auto; /* Scrollable content */
+    border-bottom: 1px solid #eeeeee; /* Divider line */
+  }
+  
+  .chatBody p {
+    margin: 5px 0; /* Space between messages */
+  }
+  
+  .chatBody p:nth-child(even) {
+    text-align: left; /* Align even messages to the left */
+    color: #333; /* Text color */
+  }
+  
+  .chatBody p:nth-child(odd) {
+    text-align: right; /* Align odd messages to the right */
+    color: #4a90e2; /* Different color for user messages */
+  }
+  
+  .chatInput {
+    display: flex; /* Align input and button in a row */
+    padding: 10px;
+    background-color: #f9f9f9; /* Input background color */
+    border-top: 1px solid #eeeeee; /* Top border */
+  }
+  
+  .chatIput input {
+    flex-grow: 1; /* Take up available space */
+    padding: 10px; /* Inner padding */
+    border: 1px solid #cccccc; /* Border */
+    border-radius: 5px; /* Rounded corners */
+    margin-right: 10px; /* Space between input and button */
+  }
+  
+  .chatInput button {
+    background-color: #6a5acd; /* Button background color */
+    color: #ffffff; /* Button text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 15px; /* Button padding */
+    cursor: pointer; /* Pointer on hover */
+    transition: background-color 0.3s ease; /* Smooth transition */
+  }
+  
+  .chatInput button:hover {
+    background-color: #5a4ec7; /* Darker shade on hover */
+  }
